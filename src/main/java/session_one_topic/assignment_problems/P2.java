@@ -1,4 +1,4 @@
-package org.example;
+package session_one_topic.assignment_problems;
 
 import java.util.Scanner;
 
