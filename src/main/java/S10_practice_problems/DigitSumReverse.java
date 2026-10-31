@@ -1,0 +1,27 @@
+package S10_practice_problems;
+
+import java.util.Scanner;
+
+public class DigitSumReverse {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+        int temp = num;
+
+        int sum = 0;
+        int reverse = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+
+            sum = sum + digit;
+            reverse = reverse * 10 + digit;
+
+            temp = temp / 10;
+        }
+
+        System.out.println("Sum of digits: " + sum);
+        System.out.println("Reverse: " + reverse);
+    }
+}
